@@ -1,0 +1,3 @@
+Icon Archive -> Site com uma biblioteca de Icones prontos
+Favicon.cc -> Site onde pode criar icon e pixelart
+Favicon.io -> Pode Criar um Icone por texto, imagem, ou emoji.

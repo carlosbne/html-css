@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groupin Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background-color: aquamarine;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: rgb(7, 117, 117);
+            padding: 3px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.418);
+        }
+        nav > a{
+            text-decoration: none;
+            color: whitesmoke;
+            padding: 4px;
+        }
+        a:hover{
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        main{
+            background-color: rgba(127, 255, 212, 0.596);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.329);
+        }
+        article > aside{
+            background-color: rgb(5, 211, 211);
+        }
+        footer{
+            background-color: rgb(7, 117, 117);
+            color: whitesmoke;
+            text-align: center;
+            padding: 2px;
+        }
+        footer > p{
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias queijo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque repudiandae tempore magnam itaque distinctio quaerat repellendus dolor praesentium! Atque pariatur facere veniam, eum veritatis omnis. Rem corporis voluptates necessitatibus eum?</p>
+                <aside>
+                    <p>Artigo escrito por João do Queijo</p>
+                </aside>
+            </article>
+            <article></article>
+        </section>
+    </main>
+    <footer>
+        <p>Site criado por Queijos Brasil</p>
+    </footer>
+</body>
+</html>
