@@ -1,0 +1,254 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+@font-face {
+    font-family: "Orator";
+    src: url('/fontes/Orator-Std-Font.otf');
+}
+*{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+    font-family: var(--fonte-padrao);
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: lightgray
+}
+
+:root{
+    --cor0: #6C8C80;
+    --cor1: #025940;
+    --cor2: #013440;
+    --cor3: #BF9663;
+    --cor4: #733702;
+    --cor5: #0a8fb1;
+    --cor10: #ffffff;
+    --cor11: #000000;
+
+    --fonte-padrao: 'Roboto', sans-serif;
+    --fonte-destaque: 'Orator', sans-serif;
+}
+
+header{
+    display: block;
+    text-align: center;
+    height: 140px;
+    padding: 50px;
+    background-color: var(--cor11);
+    color: var(--cor10);
+    font-size: 0.8em;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.197);
+}
+
+.titulo-autor > a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.titulo-autor > a:hover{
+    text-decoration: underline;
+    color: var(--cor0)
+}
+
+.titulo{
+    font-family: var(--fonte-destaque);
+    font-size: 5.5em;
+    color: var(--cor5);
+    text-transform: uppercase;
+}
+main{
+    
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    max-width: 1000px;
+    margin:auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.197);
+}
+/* .menu{
+    background-color: var(--cor11);
+    padding: 5px 10px;
+    font-size: 1em;
+}
+.menu > a{
+    text-decoration: none;
+    color: var(--cor10);
+    font-weight: lighter;
+}
+.menu > a:hover{
+    text-decoration: underline;
+} */
+
+main .intro, .animacao, .autor{
+    background-color: var(--cor10);
+    padding: 20px;
+    line-height: 1.2em;
+    width: 90%;
+    margin: auto;
+}
+.animacao , .intro , .autor p {
+    padding: 5px;
+    text-indent: 1.5em;
+    text-align: justify;
+}
+h2{
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    font-weight: 300;
+    padding: 5px;
+    border-bottom: 1px solid black;
+}
+
+.poema{
+    width: 80%;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.197);
+}
+
+article section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 1.7em;
+}
+
+section .normal, .imagem p{
+    font-family: var(--fonte-padrao);
+    font-weight: 300;
+}
+
+h3{/* 
+    background-image: linear-gradient(to right, var(--cor2), var(--cor1), var(--cor0)); */
+    background-color: var(--cor0);
+    padding: 5px 30px;
+    font-size: 1.2em;
+    color: var(--cor10);
+}
+
+section.normal{
+    background-color: var(--cor10);
+    padding-left: 35px;
+}
+
+section.imagem{
+    background-color: rgb(92, 92, 92);
+    color: var(--cor10);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.325);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section.imagem > p{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.425);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.645);
+}
+
+section#img01{
+    background-image: url(../imagens/camisa-fechada.png);
+    background-position: center center;
+}
+section#img02{
+    background-image: url(../imagens/camisa-aberta.png);
+    background-position: center center;
+}
+.biblio{
+    display:flex;
+    justify-content: right;
+    text-align: right;
+    font-size: 0.8em;
+}
+
+.animacao{
+    margin-top: 30px;
+}
+
+.animacao-video{
+    position: relative;
+    padding-bottom: 55%;
+}
+
+.video{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    bottom: 5%;
+    right: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+.animacao p{
+    padding-bottom: 5px;
+    line-height: 1.2em;
+}
+
+
+aside{
+    padding-left: 20px;
+}
+
+.autor-titulo{
+    display: block;
+}
+
+aside > p{
+    display: inline-block;
+    padding: 20px;
+    vertical-align: top;
+    max-width: 450px;
+    margin-bottom: 20px;
+}
+
+
+.autor-imagem{
+    /* display: inline-block; */
+    height: 280px;
+    padding-left: 20px;
+}
+
+/* Creditos sobre o conteudo */
+.creditos{
+    padding-top: 5px;
+    padding-bottom: -5px;
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.creditos a{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+.creditos a:hover{
+    text-decoration: underline;
+    color: var(--cor2);
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: var(--cor11);
+    color: var(--cor10);
+    text-align: center;
+    padding: 5px;
+    font-weight: lighter;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--cor10);
+    font-weight: bolder;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor0)
+}
