@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        th,td{
+            border: 1px solid black;
+            width: 200px;
+            text-align: center;
+        }
+        caption{
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .destaque{
+            background-color: lightblue;
+        }
+        .cnome{
+            background-color: aquamarine;
+        }
+        .cgrupo{
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="2">
+            <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Pernalonga</td>
+            <td>M</td>
+            <td>21</td>
+            <td>Tranbiqueiro</td>
+        </tr>
+        <tr>
+            <td>Patolino</td>
+            <td>M</td>
+            <td>23</td>
+            <td>Contador</td>
+        </tr>
+        <tr>
+            <td>Lola</td>
+            <td>F</td>
+            <td>20</td>
+            <td>Influencer</td>
+        </tr>
+        <tr>
+            <td>Frajola</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Ator</td>
+        </tr>
+        <tr>
+            <td>Piupiu</td>
+            <td>F</td>
+            <td>19</td>
+            <td>Modelo</td>
+        </tr>
+    </table>
+</body>
+</html>
